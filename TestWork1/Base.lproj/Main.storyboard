@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,133 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUh-nj-EDN">
+                                <rect key="frame" x="277" y="285" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ckc-Gd-H4D"/>
+                                    <constraint firstAttribute="width" constant="57" id="fWU-bN-e7b">
+                                        <variation key="heightClass=regular" constant="100"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="加入Q群A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ckc-Gd-H4D"/>
+                                        <exclude reference="fWU-bN-e7b"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ckc-Gd-H4D"/>
+                                        <include reference="fWU-bN-e7b"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="addQQGroup:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mze-Zo-sxx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71I-DY-Ywh">
+                                <rect key="frame" x="277" y="285" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="HzM-aY-QkO"/>
+                                    <constraint firstAttribute="width" constant="57" id="kan-vf-1yw">
+                                        <variation key="heightClass=regular" constant="100"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="sfj-5B-wwy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="57" id="tQJ-HX-tJY"/>
+                                </constraints>
+                                <state key="normal" title="加入Q群B">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HzM-aY-QkO"/>
+                                        <exclude reference="kan-vf-1yw"/>
+                                        <exclude reference="sfj-5B-wwy"/>
+                                        <exclude reference="tQJ-HX-tJY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="HzM-aY-QkO"/>
+                                        <include reference="kan-vf-1yw"/>
+                                        <include reference="sfj-5B-wwy"/>
+                                        <include reference="tQJ-HX-tJY"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="addQQGroupB:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8I9-Cs-LUJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uo4-Ju-nzM">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NLO-mT-Wd9"/>
+                                    <constraint firstAttribute="height" constant="21" id="ZLS-Un-FlQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NLO-mT-Wd9"/>
+                                        <exclude reference="ZLS-Un-FlQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="NLO-mT-Wd9"/>
+                                        <include reference="ZLS-Un-FlQ"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="uo4-Ju-nzM" secondAttribute="centerX" id="QRI-GK-j8M"/>
+                            <constraint firstAttribute="centerX" secondItem="cUh-nj-EDN" secondAttribute="centerX" id="d1b-A1-OWs"/>
+                            <constraint firstAttribute="centerX" secondItem="71I-DY-Ywh" secondAttribute="centerX" id="fVd-Yw-wyr"/>
+                            <constraint firstAttribute="centerY" secondItem="71I-DY-Ywh" secondAttribute="centerY" constant="100" id="kDG-Ue-usz"/>
+                            <constraint firstAttribute="centerY" secondItem="cUh-nj-EDN" secondAttribute="centerY" id="tvd-3x-o5p">
+                                <variation key="heightClass=regular" constant="200"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="uo4-Ju-nzM" secondAttribute="centerY" id="vWA-Nk-3LF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="71I-DY-Ywh"/>
+                                <exclude reference="uo4-Ju-nzM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="d1b-A1-OWs"/>
+                                <exclude reference="tvd-3x-o5p"/>
+                                <exclude reference="fVd-Yw-wyr"/>
+                                <exclude reference="kDG-Ue-usz"/>
+                                <exclude reference="QRI-GK-j8M"/>
+                                <exclude reference="vWA-Nk-3LF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="71I-DY-Ywh"/>
+                                <include reference="uo4-Ju-nzM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="d1b-A1-OWs"/>
+                                <include reference="tvd-3x-o5p"/>
+                                <include reference="fVd-Yw-wyr"/>
+                                <include reference="kDG-Ue-usz"/>
+                                <include reference="QRI-GK-j8M"/>
+                                <include reference="vWA-Nk-3LF"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="uo4-Ju-nzM" id="8iY-sL-KxC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
